@@ -12,5 +12,6 @@ console.log("this is  a public ip address");
 else{
 console.log("This is not an i address at all")
 }
+//testing//
 
 console.log(i);
