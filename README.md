@@ -9,7 +9,7 @@ ipstock - a script to see if an ip is on a public or private newtork
 system requirements: node.js latest preferrbaly latest version
 
 
-have any questions free to to put in an issue.
+have any questions free to to put in an issue!
 
 
 git clone https://github.com/seandadonntech/grabriel
