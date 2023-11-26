@@ -1,12 +1,12 @@
 # grabriel
-A tool use to grab infomation with js
-This respo may contain mutiple files 
+A tool use to grab information with js
+This repo may contain multiple files 
    list of tools:
-ipstock - a script to see if an ip is on a public or private newtork
+ipstock - a script to see if an ip is on a public or private network
 
 
 
-system requirements: node.js latest preferrbaly latest version
+system requirements: node.js latest preferably latest version
 
 
 have any questions free to to put in an issue!

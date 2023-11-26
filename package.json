@@ -1,0 +1,27 @@
+{
+  "name": "grabriel",
+  "version": "1.0.0",
+  "description": "A tool use to grab information with js\r This repo may contain multiple files \r    list of tools:\r ipstock - a script to see if an ip is on a public or private network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "grabriel": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AF-UN/grabriel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AF-UN/grabriel/issues"
+  },
+  "homepage": "https://github.com/AF-UN/grabriel#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5",
+    "yargs": "^17.7.2"
+  }
+}
