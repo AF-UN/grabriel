@@ -9,7 +9,7 @@ const pass = require('./tools/pass.js');
 /**
  * Map that stores the relationship between the 
  * tool name and the object that executes the tool.
- * 
+ * test
  * <string, object>
  */
 const toolMap = new Map()
