@@ -2,6 +2,7 @@
 
 const inquirer = require("inquirer")
 const ipChecker = require("./tools/ipchecker")
+const showBanner = require('node-banner');
 
 /**
  * Map that stores the relationship between the 
@@ -64,14 +65,22 @@ const jumpToTool = async (toolName) => {
     })
 }
 
-// Ask user to select the tool they would like to use
-const prompt = inquirer.createPromptModule()
-prompt([{
-    type: "rawlist",
-    name: "toolName",
-    message: "Which tool would you like to use?",
-    choices: Array.from(toolMap.keys())
-}]).then((answers) => {
-    const tool = answers.toolName
-    jumpToTool(tool)
-})
+const banner = async () => {
+    await showBanner('GRABRIEL', ' A tool used to grab information', "red", "green");
+
+    console.log("\n\n")
+
+    // Ask user to select the tool they would like to use
+    const prompt = inquirer.createPromptModule()
+    prompt([{
+        type: "rawlist",
+        name: "toolName",
+        message: "Which tool would you like to use?",
+        choices: Array.from(toolMap.keys())
+    }]).then((answers) => {
+        const tool = answers.toolName
+        jumpToTool(tool)
+    })
+};
+
+banner();
