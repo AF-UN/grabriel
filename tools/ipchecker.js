@@ -1,4 +1,5 @@
-const fs = require('fs');
+const ip = require('ip')
+const inquirer = require("inquirer")
 
 //more things will be added soon
 
@@ -28,14 +29,31 @@ const IPChecker = {
    * Reads a files and runs the ip checker program.
    */
   Execute() {
-    fs.readFile('./tools/ipstock.mjs', 'utf8', (err, data) => {
-      if (err) {
-        console.error(err);
-        return;
-      }
-      console.log(data);
-    });
+    const ipPrompt = inquirer.createPromptModule()
+    ipPrompt([{
+      type: "input",
+      name: "ipAddr",
+      message: "Enter IP Address:"
+    }]).then((answers) => {
+      const resp = check_ip_private(answers.ipAddr)
+      console.log(resp)
+    })
   },
+}
+
+function check_ip_private(ipAddr) {
+  const isCorrectFormat = ip.isV4Format(ipAddr)
+
+  if (!isCorrectFormat) {
+    return "This is not an ip address at all"
+  }
+
+  var i = ip.isPrivate(ipAddr)
+  if (i === true) {
+    return "This is a private ip address"
+  } else {
+    return "This is a public ip address"
+  }
 }
 
 // Important to include in order for the 
