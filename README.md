@@ -13,7 +13,7 @@ have any questions free to to put in an issue!
 
 ## USAGE
 ```
-git clone https://github.com/seandadonntech/grabriel
+git clone https://github.com/AF-UN/grabriel
 ```
 
 ### Install the executable
