@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/AF-UN/grabriel#readme",
   "dependencies": {
-    "inquirer": "^8.2.5",
+    "inquirer": "^8.2.0",
+    "ip": "^1.1.8",
     "node-banner": "^1.4.0",
     "yargs": "^17.7.2"
   }

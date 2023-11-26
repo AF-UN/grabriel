@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
 const inquirer = require("inquirer")
-const ipChecker = require("./tools/ipchecker")
+const ipChecker = require("./tools/ipchecker.js");
+const cred = require("./tools/cred.js");
 const showBanner = require('node-banner');
+const pass = require('./tools/pass.js');
 
 /**
  * Map that stores the relationship between the 
@@ -16,8 +18,9 @@ const toolMap = new Map()
 // Will have to manually add new tools and map to the
 // created objects.
 toolMap.set("ipstock", ipChecker.IPChecker)
+toolMap.set("wifi-pass",  pass.Pass )
 // ADD MORE TOOLS HERE
-
+toolMap.set("cred", cred.Credit)
 /**
  * Returns the tool object after passing the tool name.
  * This will change the tool that the user is using.
@@ -66,7 +69,7 @@ const jumpToTool = async (toolName) => {
 }
 
 const banner = async () => {
-    await showBanner('GRABRIEL', ' A tool used to grab information', "red", "green");
+    await showBanner('GRABRIEL', ' A tool used to grab information', "blue", "green");
 
     console.log("\n\n")
 

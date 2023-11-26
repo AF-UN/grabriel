@@ -1,3 +1,0 @@
-// npm packages//
-npm i private-ip
-npm i prompt-sync

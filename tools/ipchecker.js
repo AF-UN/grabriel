@@ -4,7 +4,7 @@ const inquirer = require("inquirer")
 //more things will be added soon
 
 const IPChecker = {
-  toolName: "ipchecker",
+  toolName: "IPChecker",
   toolDescription: "Checks if the an ip is a private or public ip.",
 
   /**
