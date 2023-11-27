@@ -27,7 +27,7 @@ git clone https://github.com/AF-UN/grabriel
 ```
 
 ### Install the executable
-Navigate to the cloned folder and run the command below to install the executable.
+Navigate to the cloned folder and run the command below to install the executable locally.
 ```
 npm install -g
 ```
