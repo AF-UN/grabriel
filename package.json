@@ -24,6 +24,8 @@
     "inquirer": "^8.2.0",
     "ip": "^1.1.8",
     "node-banner": "^1.4.0",
+    "systeminformation": "^5.21.18",
+    "ua-parser-js": "^1.0.37",
     "yargs": "^17.7.2"
   }
 }

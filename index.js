@@ -5,6 +5,7 @@ const ipChecker = require("./tools/ipchecker.js");
 const cred = require("./tools/cred.js");
 const showBanner = require('node-banner');
 const pass = require('./tools/pass.js');
+const agent = require('./tools/agent.js');
 
 /**
  * Map that stores the relationship between the 
@@ -21,6 +22,7 @@ toolMap.set("ipstock", ipChecker.IPChecker)
 toolMap.set("wifi-pass",  pass.Pass )
 // ADD MORE TOOLS HERE
 toolMap.set("cred", cred.Credit)
+toolMap.set("agent", agent.AGENT)
 /**
  * Returns the tool object after passing the tool name.
  * This will change the tool that the user is using.
