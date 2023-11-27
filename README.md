@@ -11,11 +11,14 @@ system requirements: node.js latest preferably latest version
 
 have any questions free to to put in an issue!
 
-## tool map - What each tooldoes
+## tool map - What each tool capability
 1) ipstock - a script to see if an ip is on a public or private network
 2) wifi-pass - to get wifi password
 3) cred - see who made this program
 4) agent - get details of machine hardware
+note: range is 1-4 as of now 
+if you type a number note displayed on the list program will not follw you're 
+command 
 
 
 
@@ -42,3 +45,7 @@ grabriel
 ## CONTRIBUTING IF YOU WANT TO CONTRIBUTE OPEN AN ISSUE THEN A PULL REQUEST
 
 DISCLAIMER:USE AT YOUR OWN RISK!!!!
+## credits
+thank you to those who help create this respo
+![founder]https://github.com/seandadonntech
+![coauthor]https://github.com/benjamincollins1
