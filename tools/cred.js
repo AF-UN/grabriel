@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 
 const Credit = {
   toolName: "credit",
-  toolDescription: "see who made this prgram",
+  toolDescription: "see who made this program",
 
   /**
    * Returns the name of the tool.
