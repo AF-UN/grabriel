@@ -7,6 +7,7 @@ const showBanner = require('node-banner');
 const pass = require('./tools/pass.js');
 const agent = require('./tools/agent.js');
 const wordgen = require("./tools/wordgen.js");
+const help = require("./tools/help.js");
 /**
  * Map that stores the relationship between the 
  * tool name and the object that executes the tool.
@@ -25,6 +26,7 @@ toolMap.set("wifi-pass",  pass.Pass );
 
 toolMap.set("word-gen",wordgen.Wordgen);
 toolMap.set("agent", agent.AGENT)
+toolMap.set("help",help.Help);
 toolMap.set("cred", cred.Credit)
 /**
  * Returns the tool object after passing the tool name.
