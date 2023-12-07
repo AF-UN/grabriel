@@ -6,7 +6,7 @@ const cred = require("./tools/cred.js");
 const showBanner = require('node-banner');
 const pass = require('./tools/pass.js');
 const agent = require('./tools/agent.js');
-
+const wordgen = require("./tools/wordgen.js");
 /**
  * Map that stores the relationship between the 
  * tool name and the object that executes the tool.
@@ -18,11 +18,14 @@ const toolMap = new Map()
 // Sets different tools and maps to the object.
 // Will have to manually add new tools and map to the
 // created objects.
-toolMap.set("ipstock", ipChecker.IPChecker)
-toolMap.set("wifi-pass",  pass.Pass )
+toolMap.set("ipstock", ipChecker.IPChecker);
+toolMap.set("wifi-pass",  pass.Pass );
 // ADD MORE TOOLS HERE
-toolMap.set("cred", cred.Credit)
+
+
+toolMap.set("word-gen",wordgen.Wordgen);
 toolMap.set("agent", agent.AGENT)
+toolMap.set("cred", cred.Credit)
 /**
  * Returns the tool object after passing the tool name.
  * This will change the tool that the user is using.
