@@ -26,7 +26,7 @@ toolMap.set("wifi-pass",  pass.Pass );
 
 toolMap.set("word-gen",wordgen.Wordgen);
 toolMap.set("agent", agent.AGENT)
-toolMap.set("help",help.Help);
+toolMap.set("help",help.HELP);
 toolMap.set("cred", cred.Credit)
 /**
  * Returns the tool object after passing the tool name.
