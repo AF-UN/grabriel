@@ -11,11 +11,15 @@ system requirements: node.js latest preferably latest version
 
 have any questions free to to put in an issue!
 
-## tool map - What each tool capability
+## tool map - What is each tool capability
 1) ipstock - a script to see if an ip is on a public or private network
-2) wifi-pass - to get wifi password
-3) cred - see who made this program
+2) wifi-pass - to get wifi 
+3) cred - see who made this programpassword
 4) agent - get details of machine hardware
+5) help -  list of commands
+6) cred - see who made this program
+
+
 note: range is 1-4 as of now 
 if you type a number note displayed on the list program will not follw you're 
 command 
