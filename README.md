@@ -14,7 +14,7 @@ have any questions free to to put in an issue!
 ## tool map - What is each tool capability
 1) ipstock - a script to see if an ip is on a public or private network
 2) wifi-pass - to get wifi 
-3) cred - see who made this programpassword
+3) cred - see who made this program
 4) agent - get details of machine hardware
 5) help -  list of commands
 6) cred - see who made this program
