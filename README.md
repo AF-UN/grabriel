@@ -1,5 +1,5 @@
 # grabriel
-A tool use to grab information with js
+A tool use to grab information & more with js
 This repo may contain multiple files 
    list of tools:
 ipstock - a script to see if an ip is on a public or private network
@@ -18,13 +18,6 @@ have any questions free to to put in an issue!
 4) agent - get details of machine hardware
 5) help -  list of commands
 6) cred - see who made this program
-
-
-note: range is 1-4 as of now 
-if you type a number note displayed on the list program will not follw you're 
-command 
-
-
 
 
 
