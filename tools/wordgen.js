@@ -1,4 +1,5 @@
 var prompt = require('prompt-sync')()
+var fs = require('fs');
 
 
 const Wordgen = {
@@ -27,46 +28,44 @@ const Wordgen = {
      * Reads a files and runs the ip checker program.
      */
     Execute() {
-        letters_low = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o","p", "q", "r","s", "t", "u", "v", "w", "y", "z","1", "2", "3", "4", "5", "6","7", "7", "8", "9","!","@","#", "$"];
+      var fs = require('fs');
+      var prompt = require('prompt-sync')();
+      
+      var letters_low = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "y", "z"];
+      var letters_uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X","Y", "Z"];
+      var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+      var symbols = ["!","@","#","$","%","^","&","*","*"];
+      
+      // Concatenate all arrays
+      var all_characters = letters_low.concat(letters_uppercase, numbers, symbols);
+      
+      while (true) {
+          var n = prompt('Enter command: ');
+      
+          if (n == 1 || n.toLowerCase() === "one") {
+              for (var i = 0; i < 6; i++) {
+                  var result = [];
+                  for (var p = 0; p < 6; p++) {
+                      var rand = all_characters[Math.floor(Math.random() * all_characters.length)];
+                      result.push(rand);
+                  }
+      
+                  result = result.join("");
+                  console.log(result);
+                  fs.appendFile('wordlist.txt', result  + '\n', function (err) {
+                      if (err) throw err;
+                      console.log('Saved!');
+                  });
+              }
+              break; // Exit the loop after successful execution
+          } else {
+              console.log("Invalid command. Please enter a valid command.");
+          }
+      }
+        
 
-        var randomItem = letters_low[Math.floor(Math.random()*letters_low.length)];
-        
-        var n = prompt('Enter command : ');
-        
-        
-        
-        //console.log(letters_low.length);//
-        // ask what command user wants to use //
-        var result = []
-        
-        var n = 1
-        //console.log(letters_low.length);//
-        // ask what command user wants to use //
-        
-        if (n==1 || "one" ){ // type 1 or one //
-            for (var n = 0; n < 6; n++) {
-        
-                  var rand = letters_low[Math.floor(Math.random()*16)];
-                  result.push(rand);
-                  
-            }
-        
-        result = result.join("")
-        console.log(result)
-        
-        }
-
-        else{
-        console.log("invalid command");
-        }
-        
-     
-       
-    
-  
-    }}
-    
+    }};
   
     module.exports = {
     Wordgen
-      }
+      };
