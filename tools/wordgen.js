@@ -4,7 +4,7 @@ var fs = require('fs');
 
 const Wordgen = {
     toolName: "wordgen",
-    toolDescription: "A simple word list generator (still being developed)",
+    toolDescription: "A simple word list generator ",
   
     /**
      * Returns the name of the tool.
