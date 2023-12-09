@@ -40,12 +40,15 @@ const Wordgen = {
       var all_characters = letters_low.concat(letters_uppercase, numbers, symbols);
       
       while (true) {
-          var n = prompt('Enter command: ');
+          var numWords = parseInt(prompt('Enter the number of words to generate: '));
+          var numCharacters = parseInt(prompt('Enter the number of characters per word: '));
       
-          if (n == 1 || n.toLowerCase() === "one") {
-              for (var i = 0; i < 6; i++) {
+          if (isNaN(numWords) || isNaN(numCharacters) || numWords <= 0 || numCharacters <= 0) {
+              console.log("Invalid input. Please enter positive integers for the number of words and characters.");
+          } else {
+              for (var i = 0; i < numWords; i++) {
                   var result = [];
-                  for (var p = 0; p < 6; p++) {
+                  for (var p = 0; p < numCharacters; p++) {
                       var rand = all_characters[Math.floor(Math.random() * all_characters.length)];
                       result.push(rand);
                   }
@@ -58,13 +61,13 @@ const Wordgen = {
                   });
               }
               break; // Exit the loop after successful execution
-          } else {
-              console.log("Invalid command. Please enter a valid command.");
           }
+      }
+      
       }
         
 
-    }};
+}
   
     module.exports = {
     Wordgen
